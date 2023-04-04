@@ -1,6 +1,6 @@
 package staticex;
 
-public class studentTest3 {
+public class StudentTest3 {
 
     public static void main(String[] args) {
         Student1 studentLee = new Student1();
