@@ -11,17 +11,26 @@ public class Customer {
 
     //디폴트 생성자
     public Customer(){
-        customerGrade = "SILVER";   //기본 등급
-        bonusRatio = 0.01;  //보너스 포인트 기본 적립 비용
-        System.out.println("Customer() 생성자 호출");
+//        customerGrade = "SILVER";   //기본 등급
+//        bonusRatio = 0.01;  //보너스 포인트 기본 적립 비용
+//        System.out.println("Customer() 생성자 호출");
+
+        initCustomer();
     }
 
     public Customer(int customerID, String customerName) {
         this.customerID = customerID;
         this.customerName = customerName;
+        //customerGrade = "SILVER";
+        //bonusRatio = 0.01;
+        //System.out.println("Customer(int, String) 생성자 호출! ");
+
+        initCustomer();
+    }
+
+    private void initCustomer(){    //멤버 변수의 초기화 부분
         customerGrade = "SILVER";
         bonusRatio = 0.01;
-        System.out.println("Customer(int, String) 생성자 호출! ");
     }
 
     //보너스 포인트 적립, 지불 가격 계산 메소드
