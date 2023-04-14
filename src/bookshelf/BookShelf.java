@@ -8,7 +8,7 @@ public class BookShelf extends Shelf implements Queue {
 
     @Override
     public String deQueue(){
-        return shelf.move(0);
+        return shelf.remove(0);
     }
 
     @Override
